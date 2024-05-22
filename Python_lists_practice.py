@@ -4,6 +4,7 @@
 fruit = ['apple', 'orange', 'banana', 'cherry']
 berry = ['strawberry', 'raspberry', 'boysenberry']
 
-my_fav_fruit = fruit.append('mandarin')
-print(my_fav_fruit)
+fruit.append('mandarin')
+fruit.extend(berry)
+print(fruit)
 
