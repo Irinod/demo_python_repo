@@ -24,10 +24,10 @@ my_guests = ['mom', 'rob', 'leo']
 
 i = 0
 for guest in my_guests:
-    i+=1
     if guest == 'mom':
         my_guests[i] = 'mother'
-
-    print(f'I"d like to invite you to dinner, {guest.title()}!')
+    
+    print(f'I"d like to invite you to dinner, {my_guests[i].title()}!')
+    i += 1
 
 
