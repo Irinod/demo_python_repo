@@ -1,10 +1,20 @@
 # This is my practice file to master Lists in Python
 # I am going to complete all excercises provided in Python Crash Course book
 
-fruit = ['apple', 'orange', 'banana', 'cherry']
-berry = ['strawberry', 'raspberry', 'boysenberry']
+# 3-1
+my_friends = ['rob', 'yeliz', 'adam']
 
-fruit.append('mandarin')
-fruit.extend(berry)
-print(fruit)
+for friend in my_friends:
+    print(f'{friend.title()}')
 
+# 3-2
+my_friends = ['rob', 'yeliz', 'adam']
+
+for friend in my_friends:
+    print(f'How are you doing, {friend.title()}?')
+
+# 3-3
+wish_list = ['house', 'car', 'trip', 'furniture']
+
+for wish in wish_list:
+    print(f'I would like to own a {wish}')
