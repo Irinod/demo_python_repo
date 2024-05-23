@@ -19,9 +19,15 @@ wish_list = ['house', 'car', 'trip', 'furniture']
 for wish in wish_list:
     print(f'I would like to own a {wish}')
 
-# 3-4 Invite to dinner
-
+# 3-4 and 5 Invite to dinner
 my_guests = ['mom', 'rob', 'leo']
 
+i = 0
 for guest in my_guests:
+    i+=1
+    if guest == 'mom':
+        my_guests[i] = 'mother'
+
     print(f'I"d like to invite you to dinner, {guest.title()}!')
+
+
