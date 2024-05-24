@@ -155,3 +155,11 @@ print(odd_numb1, '\n')
 odd_numb2 = [numb for numb in range(1,21,2)]
 print(odd_numb2, '\n')
 
+# 4-7 Multiples of 3 from 3 to 30
+multpls_3 = [x for x in range(1,31) if x%3==0]
+print(multpls_3)
+
+# 4-8 and 4-9 Cubes from 1 to 10
+cubes = [x**3 for x in range(1,11)]
+for cube in cubes:
+    print(cube)
