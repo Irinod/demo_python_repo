@@ -97,3 +97,11 @@ print(f'\n the order has permanently changed:\n {locations}')
 print(f'\n original list \n {locations}')
 locations.sort(reverse=True)
 print(f'\n the order has permanently changed:\n {locations}')
+
+# 3-9 add number of people invited
+my_guests = ['mom', 'rob', 'leo', 'tracey', 'mike']
+num_guests = len(my_guests)
+
+for guest in my_guests:
+    print(f'There are {num_guests} of us confirmed')
+    print(f'{guest.title()}, please come along!\n')
