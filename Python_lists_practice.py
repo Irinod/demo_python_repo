@@ -163,3 +163,52 @@ print(multpls_3)
 cubes = [x**3 for x in range(1,11)]
 for cube in cubes:
     print(cube)
+
+# 4-10 looping through a slice
+my_list = [x for x in range(1,10)]
+print(my_list)
+
+# looping through the first 3 items:
+print('First 3 items:')
+for item in my_list[0:3]:
+    print(item)
+
+# loopint through the middle 3 items:
+print('Middle 3 items:')
+for item in my_list[3:6]:
+    print(item)
+
+# looping through the last 3 items:
+print('Last 3 items')
+for item in my_list[-3:]:
+    print(item)
+
+# 4-11 Pizza - copy list
+my_pizza = ['margarita', 'marinara', 'roman']
+
+# Solution 1: using copy() method:
+friend_pizza = my_pizza.copy()
+
+my_pizza.append('hawaian')
+friend_pizza.append('neapoli')
+
+print(my_pizza)
+print(friend_pizza)
+
+# Solution 2: using list() function:
+friend_pizza = list(my_pizza)
+
+my_pizza.append('hawaian')
+friend_pizza.append('neapoli')
+
+print(my_pizza)
+print(friend_pizza)
+
+# Solution 3: using basic assignment
+friend_pizza = my_pizza[:]
+
+my_pizza.append('hawaian')
+friend_pizza.append('neapoli')
+
+print(my_pizza)
+print(friend_pizza)
