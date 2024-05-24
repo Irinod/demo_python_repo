@@ -30,4 +30,34 @@ for guest in my_guests:
     print(f'I"d like to invite you to dinner, {my_guests[i].title()}!')
     i += 1
 
+# 3-6 extend invitation to more guests
+my_guests = ['mom', 'rob', 'leo']
 
+my_guests.insert(0, 'catherine')
+my_guests.insert(2, 'mike')
+my_guests.append('tracey')
+print(my_guests)
+
+for guest in my_guests:
+    print(f'We now have a bigger table!')
+    print(f'{guest.title()}, please come along!\n')
+
+# 3-7 Shrinking Guest List
+# I can now only invite 2 people from a guest list
+
+my_guests = ['mom', 'rob', 'leo', 'tracey', 'mike']
+
+for guest in my_guests:
+    print(f'Apologies, {guest.title()}, I can only invite 2 people')
+
+
+# Removing guests from the list until only 2 left
+
+while len(my_guests) > 2:
+    guest_rem = my_guests.pop()
+    print(f'Apologies, {guest_rem.title()}, dinner got cancelled')
+
+# Print an invite for the remaining 2 guests
+
+for guest in my_guests:
+    print(f'{guest.title()}, please come along!\n')
