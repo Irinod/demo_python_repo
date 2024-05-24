@@ -105,3 +105,53 @@ num_guests = len(my_guests)
 for guest in my_guests:
     print(f'There are {num_guests} of us confirmed')
     print(f'{guest.title()}, please come along!\n')
+
+# 4-1 Pizza 
+fav_pizza = ['margarita', 'marinara', 'roman']
+
+for pizza in fav_pizza:
+    print(f'I like {pizza} pizza')
+
+print('I like freshly made pizza\n It has to have lots of vegies in it')
+
+# 4-2 Pets
+
+animals = ['dog', 'cat', 'snake']
+
+for animal in animals:
+    print(f'{animal.title()} would make a good pet!')
+
+print('\nAny of these animals would make a good pet!')
+
+# 4-3 print numbers from 1 to 20 incl.
+for i in range(1,21):
+    print(i)
+
+
+# 4-4 List from numbers
+num_list = list(range(1,11))
+print(num_list)
+
+# 4-5 Summing a million
+num_list_huge = list(range(1,1000001))
+
+list_min = min(num_list_huge)
+print(list_min)
+print('\n')
+
+list_max = max(num_list_huge)
+print(list_max)
+print('\n')
+
+list_sum = sum(num_list_huge)
+print(list_sum)
+
+# 4-6 Odd numbers from 1 to 20
+# solution 1 - using list() and range()
+odd_numb1 = list(range(1,21,2))
+print(odd_numb1, '\n')
+
+# solution 2 - using list comprehension and range()
+odd_numb2 = [numb for numb in range(1,21,2)]
+print(odd_numb2, '\n')
+
