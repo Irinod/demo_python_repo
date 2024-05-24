@@ -57,7 +57,43 @@ while len(my_guests) > 2:
     guest_rem = my_guests.pop()
     print(f'Apologies, {guest_rem.title()}, dinner got cancelled')
 
+print(my_guests)
 # Print an invite for the remaining 2 guests
 
 for guest in my_guests:
     print(f'{guest.title()}, please come along!\n')
+
+# use del to remove the last 2 people from the list
+# and leave it empty
+
+print(my_guests)
+
+while len(my_guests) == 0:
+    del my_guests[i]
+
+print(my_guests)
+
+# 3-8 Temp sorting vs Permanent sorting
+locations = ['Italy', 'Spain', 'Germany', 'Danmark']
+
+# Temp sort with sorted()
+print(f'original list \n {locations}')
+
+# Sort in ascending order with sorted()
+print(f'temp ascending order \n {sorted(locations)}')
+
+# Sort in descending order with sorted()
+print(f'temp descending order \n {sorted(locations, reverse=True)}')
+
+# Original list hasn't changed:
+print(f'\n original list \n {locations}')
+
+# Permanent reverse order
+locations.reverse()
+print(f'\n the order has permanently changed:\n {locations}')
+
+# Permanent sort order
+
+print(f'\n original list \n {locations}')
+locations.sort(reverse=True)
+print(f'\n the order has permanently changed:\n {locations}')
