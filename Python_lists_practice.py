@@ -207,8 +207,8 @@ print(friend_pizza)
 # Solution 3: using basic assignment
 friend_pizza = my_pizza[:]
 
-my_pizza.append('hawaian')
-friend_pizza.append('neapoli')
+my_pizza.append('hawaian')ma
+friend_pizza.append('neapomali')
 
 print(my_pizza)
 print(friend_pizza)
