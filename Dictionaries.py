@@ -78,3 +78,56 @@ fav_language = {
 
 for langg in set(fav_language.values()):
     print(langg)
+
+# 6-7 People
+
+person1 = {
+    "name":"ira",
+    "age":25
+}
+
+person2 = {
+    "name":"lena",
+    "age":25
+}
+
+person3 = {
+    "name":"galya",
+    "age":25
+}
+
+fam_list = []
+fam_list.append(person1)
+fam_list.append(person2)
+fam_list.append(person3)
+
+for member in fam_list:
+    print(member)
+
+# 6-9 Favorite places
+
+fav_places = {
+    "irina":["dacha", "Paris"],
+    "lena":["seversk"],
+    "galya":["tomsk","barnaul"]
+}
+
+for member,place in fav_places.items():
+    print(f"Family member name: {member}\n")
+    
+    for item in place:
+        print(f"Favorite place: {item}\n")
+
+
+# Recursion example
+
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
