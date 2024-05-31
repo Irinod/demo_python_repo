@@ -54,7 +54,7 @@ glossary2["mean"] = "average"
 print(my_dict_words)
 print(my_dict_meanings)
 
-# 6-5 River-Coutnry
+# 6-5 River-Country
 
 rivers = {
     "volga" : "russia",
