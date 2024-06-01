@@ -8,4 +8,14 @@ def city_country(city_name, country_name):
 
 print(city_country("moscow","russia"))
 
-# 8-7 
+# 8-7 Make album
+
+def make_album(album_name, artist, num_songs = None):
+    return {'album_title': album_name, 'artist': artist, 'num_songs': num_songs}
+
+
+alb1 = make_album("Staying alive", "Bee Gees")
+alb2 = make_album("Nevermind", "Nirvana", 20)
+
+print(alb1)
+print(alb2)
