@@ -19,3 +19,20 @@ alb2 = make_album("Nevermind", "Nirvana", 20)
 
 print(alb1)
 print(alb2)
+
+# 8-10 Lists in functions
+
+def complete_task(tasks, compl_tasks):
+    while tasks:
+        task = tasks.pop()
+        print(f"The task {task} is now completed")
+        completed_tasks = compl_tasks.append(task)
+
+
+my_tasks = ["T_SQL", "Python", "Power BI", "Statistics"]
+completed = []
+complete_task(my_tasks[:],completed)
+
+print(my_tasks)
+print(completed)
+
