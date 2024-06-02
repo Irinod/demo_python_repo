@@ -36,3 +36,35 @@ complete_task(my_tasks[:],completed)
 print(my_tasks)
 print(completed)
 
+# 8-12 Sandwich ingredients 
+
+def make_a_sandwich(*arg):
+    for ingred in arg:
+        print(f'I would like {ingred} in my sandwich')
+
+
+make_a_sandwich('ham', 'cheeese')
+make_a_sandwich('tomato', 'rucula', 'salmon')
+
+# 8-13 User profile
+
+def profile(**kwarg):
+    persona = kwarg
+    return persona
+
+
+my_persona = profile(name ="Irina", age = 40, occupation = "DE")
+print(my_persona)
+
+# 8-14 Cars
+
+def make_car(manufac, model, **kwarg):
+    car = dict(manufacturer = manufac, model_name = model)
+    car.update(kwarg)
+    return car
+
+
+my_car = make_car('skoda', 'hatchback', color = "Navy", price = 56700)
+print(my_car)
+
+
