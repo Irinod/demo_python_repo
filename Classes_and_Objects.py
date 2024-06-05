@@ -4,7 +4,7 @@
 
 class Restaurant():
     '''Restaurant class'''
-    
+
     def __init__(self,restaurant_name,cuisine_type):
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
@@ -29,3 +29,7 @@ restaurant.describe_restaurant()
 restaurant.open_restaurant()
 
 
+# 9-2 Creating a couple more instances of Restaurant:
+
+my_restaurant = Restaurant("Pad Thai","thai")
+my_restaurant.describe_restaurant()
