@@ -33,3 +33,21 @@ restaurant.open_restaurant()
 
 my_restaurant = Restaurant("Pad Thai","thai")
 my_restaurant.describe_restaurant()
+
+# 9-3 User class
+
+class User():
+    '''Creates a User class'''
+
+    def __init__(self, login, password, email):
+        '''Initializing a User'''
+        self.login = login
+        self.password = password
+        self.email = email
+
+    def describe_user(self):
+        print(f"Full information about the user \n {self.login} {self.password} {self.email}")
+
+
+user01 = User("US001","89013","jkl@gmail.com")
+user01.describe_user()
