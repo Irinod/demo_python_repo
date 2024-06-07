@@ -93,3 +93,47 @@ user01.login_attempts_reset()
 
 print(f'Login attempts after a reset {user01.login_attempts}\n')
 
+# 9-6 IceCreamStand
+
+class Restaurant():
+    '''Restaurant class'''
+
+    def __init__(self,restaurant_name,cuisine_type):
+        self.restaurant_name = restaurant_name
+        self.cuisine_type = cuisine_type
+        self.number_served = 0 # added a number served as per 9-4
+    
+    def describe_restaurant(self):
+        print(f'{self.cuisine_type.title()} {self.restaurant_name.title()}')
+    
+    def open_restaurant(self):
+        print(f'The restaurant {self.restaurant_name.title()} is open.')
+    
+    def set_number_served(self,cust_numb):
+        self.number_served = cust_numb
+    
+    def increment_number_served(self,cust_incrmt):
+        self.number_served += cust_incrmt
+
+
+
+class IceCreamStand(Restaurant):
+    def __init__(self,restaurant_name,cuisine_type,flavours):
+        super().__init__(restaurant_name,cuisine_type)
+
+        self.flavours = flavours
+    
+    def add_flavours(self,flavour):
+        self.flavours.append(flavour)
+        
+    def display_flavours(self):   
+        for flav in self.flavours:
+            print(f'flavour: {flav}')
+
+
+my_icecream = IceCreamStand("Dolce Vitta","Gelato",["chocholate","strawberry"])
+my_icecream.add_flavours("french vanilla")
+my_icecream.add_flavours("pistachio")
+my_icecream.add_flavours("cookies and cream")
+
+my_icecream.display_flavours()
