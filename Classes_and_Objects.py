@@ -53,7 +53,7 @@ restaurant.open_restaurant()
 my_restaurant = Restaurant("Pad Thai","thai")
 my_restaurant.describe_restaurant()
 
-# 9-3 User class
+# 9-3 User class and 9-5
 
 class User():
     '''Creates a User class'''
@@ -63,10 +63,33 @@ class User():
         self.login = login
         self.password = password
         self.email = email
+        self.login_attempts = 0
 
     def describe_user(self):
         print(f"Full information about the user \n {self.login} {self.password} {self.email}")
+    
+    def increment_login_attempts(self, login_incremt):
+        self.login_attempts += login_incremt
+
+    def login_attempts_reset(self):
+        self.login_attempts = 0
+
+
 
 
 user01 = User("US001","89013","jkl@gmail.com")
 user01.describe_user()
+
+# Increment login attempts multiple times:
+print(f'Login attempts before an increment {user01.login_attempts}\n')
+
+user01.increment_login_attempts(5)
+user01.increment_login_attempts(20)
+
+print(f'Login attempts after an increment {user01.login_attempts}\n')
+
+# Reset the login attempts:
+user01.login_attempts_reset()
+
+print(f'Login attempts after a reset {user01.login_attempts}\n')
+
