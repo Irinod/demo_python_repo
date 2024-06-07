@@ -1,15 +1,6 @@
 # This program imports Restaurant class from restaurant_class module
 
-import importlib.util
- 
-# specify the module that needs to be 
-# imported relative to the path of the 
-# module
-spec=importlib.util.spec_from_file_location("restaurant_class","C:\Users\irina\OneDrive\Desktop\GIT Repos\git\demo_python_repo\demo_python_repo\restaurant_class.py")
- 
-
-
-from restaurant_class import Restaurant
+from restaurantclass import Restaurant
 
 
 class IceCreamStand(Restaurant):
