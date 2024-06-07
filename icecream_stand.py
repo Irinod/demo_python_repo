@@ -1,6 +1,14 @@
 # This program imports Restaurant class from restaurant_class module
 
-from restaurantclass import Restaurant
+# importing module
+import sys
+ 
+# appending a path
+sys.path.append('modules')
+ 
+# importing required module
+
+from restaurant_class import Restaurant
 
 
 class IceCreamStand(Restaurant):
