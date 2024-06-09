@@ -1,3 +1,5 @@
 # Demo python practice code
 
-This is my project to save all my learnings on Python programming language.
+This is my space to review some of general Python concepts and complete the practice exercises.
+
+
